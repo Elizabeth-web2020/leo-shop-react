@@ -28,6 +28,7 @@ a:hover {
   max-height: 100vh;
   background-color: #fff;
   z-index: 273;
+  border-bottom: 1px solid lightgray;
 }
 .header-top {
   background-color: rgb(76, 177, 202);
