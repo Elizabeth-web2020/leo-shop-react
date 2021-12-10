@@ -13,18 +13,18 @@ function Header() {
                                     <div className="content-left-item">Currency: <span className="currency">USD</span></div>
                                 </div>
                                 <div className="top-content-right">
-                                    <a href="/" className="content-right-item">Account</a>
-                                    <a href="/" className="content-right-item">Wishlist</a>
-                                    <a href="/" className="content-right-item">Checkout</a>
-                                    <a href="/" className="content-right-item">Log in</a>
-                                    <a href="/" className="content-right-item">Sign up</a>
+                                    <Link to="/" className="content-right-item">Account</Link>
+                                    <Link to="/" className="content-right-item">Wishlist</Link>
+                                    <Link to="/" className="content-right-item">Checkout</Link>
+                                    <Link to="/" className="content-right-item">Log in</Link>
+                                    <Link to="/" className="content-right-item">Sign up</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="header-main container">
                         <div className="header-main-content">
-                            <a href="/" className="header-logo">Leo Shop</a>
+                            <Link to="/" className="header-logo">Leo Shop</Link>
                             <div className="header-menu">
                                 <Link to="/" className="header-menu-item">Home</Link>
                                 <Link to="/catalog" className="header-menu-item">Catalog</Link>
@@ -40,9 +40,9 @@ function Header() {
                                         <img src="search-icon.svg" alt="search-icon" className="search-icon" />
                                     </button>
                                 </form>
-                                <a href="/" className="stocks">
+                                <Link to="/" className="stocks">
                                     <img src="stock.png" alt="stock-icon" className="stock-icon" />
-                                </a>
+                                </Link>
                                 <Link to="/cart" className="shopping-cart">
                                     <img src="cart.png" alt="cart-icon" className="cart-icon" />
                                 </Link>
