@@ -353,3 +353,29 @@ a:hover {
 .contact-us-soc-icons {
   border-top: 1px solid #4cb1ca;
 }
+
+/* ItemDetails */
+
+.item-details-container {
+  max-width: 100vw;
+  margin: 20px;
+}
+
+.back-btn {
+  font-size: 20px;
+}
+
+.item-cart-content {
+  max-width: 100vw;
+  margin: 30px 0;
+}
+.item-image {
+  width: 200px;
+  margin: 45px 0;
+}
+.item-price {
+  color: #7db122;
+  font-size: 30px;
+  margin-bottom: 20px;
+  /* margin-left: 50px; */
+}
