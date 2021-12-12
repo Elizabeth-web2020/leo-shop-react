@@ -17,7 +17,7 @@ function ItemDetails() {
         return (
             <div className="item-details-container">
                 <Link to='/catalog' className="back-btn">Back</Link>
-                <div className="item-cart-content">
+                <div className="item-card-content">
                     <h1 className="item-title">Item #{itemId} - {title}</h1>
                     <img className="item-image" src={image} alt="image" />
                     <div className="item-price">{price} $</div>
