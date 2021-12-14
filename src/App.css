@@ -165,7 +165,7 @@ a:hover {
 }
 .card-list-item {
   max-width: 315px;
-  height: 450px;
+  height: 430px;
   padding: 12px;
   border: 1px solid rgba(238, 238, 238, 0.71);
   box-shadow: 0 0 5px #aaa;
@@ -173,7 +173,7 @@ a:hover {
 }
 .card-list-image {
   width: 289px;
-  height: 304px;
+  height: 265px;
   /* background: #eff1f0; */
   background-color: #fff;
   display: flex;

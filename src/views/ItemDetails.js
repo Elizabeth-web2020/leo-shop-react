@@ -10,7 +10,7 @@ function ItemDetails() {
        fetch(`https://fakestoreapi.com/products/${itemId}`)
         .then(res=>res.json())
         .then(res => {setData(res); console.log(res)})
-    }, [])
+    }, [itemId])
 
     const {title, price, image, description} = data;
 
@@ -20,7 +20,7 @@ function ItemDetails() {
                 <div className="item-card-content">
                     <h1 className="item-title">Item #{itemId} - {title}</h1>
                     <img className="item-image" src={image} alt="image" />
-                    <div className="item-price">{price} $</div>
+                    <div className="item-price">${price}</div>
                     <p className="item-description">{description}</p>
                 </div>
             </div>
