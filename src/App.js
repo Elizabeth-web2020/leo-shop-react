@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import Context from './context';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,8 +13,20 @@ import Other from './views/Other';
 import Error from './views/Error';
 
 function App() {
+
+  const [list, setList] = useState([]);
+
+    useEffect( () => {
+       fetch('https://fakestoreapi.com/products')
+        .then(res=>res.json())
+        .then(res => {setList(res); console.log(res)})
+    }, [])
+
+    console.log('list', list)
+
         return (
             <div>
+              <Context.Provider value={{list, setList}}>
                 <Router>
                   <Header />
                   <Routes>
@@ -26,6 +39,7 @@ function App() {
                   </Routes>
                     <Footer />
                 </Router>
+              </Context.Provider>
             </div>
         );
 }
